@@ -2,7 +2,7 @@ import tensorflow as tf
 import input_data
 
 learning_rate = 0.01
-training_epochs = 5
+training_epochs = 25
 batch_size = 100
 display_step = 1
 
@@ -38,6 +38,7 @@ with tf.Session() as sess:
         # Fit the line.
         for step in xrange(total_batch):
             batch_xs, batch_ys = mnist.train.next_batch(batch_size)
+
             # Fit training using batch data
 
             sess.run(optimizer, feed_dict={X: batch_xs, Y: batch_ys})
