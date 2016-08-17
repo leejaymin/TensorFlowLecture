@@ -1,4 +1,5 @@
 import tensorflow as tf
+
 import input_data
 
 learning_rate = 0.01
