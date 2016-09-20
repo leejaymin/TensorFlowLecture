@@ -14,6 +14,18 @@
 
 ## 목차 ##
 
+1. [Basic Example](https://github.com/leejaymin/TensorFlowLecture/tree/master/0.Basic)
+1. [Linear Regression](https://github.com/leejaymin/TensorFlowLecture/tree/master/1.Linear%20Regression)
+1. [Logistic Classification](https://github.com/leejaymin/TensorFlowLecture/tree/master/2.Logistic%20Classification)
+1. [Multiple Perceptron for XOR Problem](https://github.com/leejaymin/TensorFlowLecture/tree/master/3.XOR)
+1. [MNIST set](https://github.com/leejaymin/TensorFlowLecture/tree/master/4.MNIST)
+    - softmax classification
+    - DNN
+    - DNN with Dropout and xaver_init
+
+
+
+
 
 
 
