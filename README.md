@@ -1,9 +1,9 @@
 # TensorFlowLecture
 
-본 코드는 김성훈 교수님의 강의를 보면서 내용에 맞게 작성한 것입니다.
-
-교수님 강의 페이지: [URL](http://hunkim.github.io/ml/) 
+본 코드는 김성훈 교수님의 강의와 TensorFlow Korea를 보면서 작성한 것입니다.
+이론적인 정리 내용은 작성자의 블로그에 있습니다. 
 작성자 블로그: [RUL](http://goodtogreate.tistory.com/category/Data%20Science/TensorFlow%20%28python%29)  
+
 
 ## 개발환경 ##
 
@@ -24,6 +24,8 @@
     - DNN with Dropout and xaver_init
 
 
+## 참고자료 ##
+- 김성훈 교수님 강의 페이지: [URL](http://hunkim.github.io/ml/) 
 
 
 
