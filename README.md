@@ -22,7 +22,7 @@
     - softmax classification
     - DNN
     - DNN with Dropout and xaver_init
-1. CNN
+1. [CNN](https://github.com/leejaymin/TensorFlowLecture/tree/master/5.CNN)
 1. Early Stop and Index Shuffling
 1. TensorBoard
 
