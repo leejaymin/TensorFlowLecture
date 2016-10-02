@@ -1,7 +1,7 @@
 # TensorFlowLecture
 
 본 코드는 김성훈 교수님의 강의와 TensorFlow Korea를 보면서 작성한 것입니다.
-이론적인 정리 내용은 작성자의 블로그에 있습니다. 
+이론적인 정리 내용은 작성자의 블로그에 있습니다.  
 작성자 블로그: [RUL](http://goodtogreate.tistory.com/category/Data%20Science/TensorFlow%20%28python%29)  
 
 
@@ -22,11 +22,15 @@
     - softmax classification
     - DNN
     - DNN with Dropout and xaver_init
+1. CNN
+1. Early Stop and Index Shuffling
+1. TensorBoard
 
 
 ## 참고자료 ##
 - 김성훈 교수님 강의 페이지: [URL](http://hunkim.github.io/ml/) 
-
+- 텐서플로 코리아: [URL](https://tensorflowkorea.wordpress.com/)
+- 한국인지과학협회 딥러닝 튜토리얼: [URL](https://github.com/leejaymin/deeplearning_tutorial)
 
 
 
