@@ -2,6 +2,7 @@
 import tensorflow as tf
 import numpy as np
 import input_data
+import time
 
 batch_size = 128
 test_size = 256
@@ -61,6 +62,7 @@ predict_op = tf.argmax(py_x, 1)
 # Launch the graph in a session
 with tf.Session() as sess:
     # you need to initialize all variables
+    start_time = time.time()
     tf.initialize_all_variables().run()
 
     for i in range(100):
@@ -79,3 +81,4 @@ with tf.Session() as sess:
                                                          Y: teY[test_indices],
                                                          p_keep_conv: 1.0,
                                                          p_keep_hidden: 1.0})))
+    print("time elapsed: {:.2f}s".format(time.time() - start_time))

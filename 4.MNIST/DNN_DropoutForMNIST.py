@@ -67,7 +67,7 @@ with tf.Session() as sess:
         total_batch = int(mnist.train.num_examples/batch_size)
 
         # Fit the line.
-        for step in xrange(total_batch):
+        for step in range(total_batch):
             batch_xs, batch_ys = mnist.train.next_batch(batch_size)
 
             # Fit training using batch data
@@ -78,9 +78,9 @@ with tf.Session() as sess:
             avg_cost += sess.run(cost, feed_dict={X: batch_xs, Y: batch_ys, dropout_rate: 0.7})/total_batch
         # Display logs per epoch step
         if epoch % display_step == 0:
-            print "Epoch:", '%04d' %(epoch+1), "cost=", "{:.9f}".format(avg_cost)
+            print("Epoch:", '%04d' %(epoch+1), "cost=", "{:.9f}".format(avg_cost))
 
-    print "Optimization Finished!"
+    print("Optimization Finished!")
 
     # Test model
     correct_prediction = tf.equal(tf.argmax(hypothesis, 1), tf.argmax(Y, 1))
