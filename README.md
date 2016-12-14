@@ -28,9 +28,9 @@
 
 
 ## 참고자료 ##
-- 김성훈 교수님 강의 페이지: [URL](http://hunkim.github.io/ml/) 
-- 텐서플로 코리아: [URL](https://tensorflowkorea.wordpress.com/)
-- 한국인지과학협회 딥러닝 튜토리얼: [URL](https://github.com/leejaymin/deeplearning_tutorial)
+- 김성훈 교수님 강의 페이지: [URL](http://hunkim.github.io/ml/)  
+- 텐서플로 코리아: [URL](https://tensorflowkorea.wordpress.com/)  
+- 한국인지과학협회 딥러닝 튜토리얼: [URL](https://github.com/leejaymin/deeplearning_tutorial)  
 
 
 

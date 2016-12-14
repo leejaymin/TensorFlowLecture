@@ -81,4 +81,5 @@ with tf.Session() as sess:
                                                          Y: teY[test_indices],
                                                          p_keep_conv: 1.0,
                                                          p_keep_hidden: 1.0})))
+
     print("time elapsed: {:.2f}s".format(time.time() - start_time))
