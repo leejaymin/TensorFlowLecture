@@ -10,7 +10,7 @@ test_size = 256
 def init_weights(shape):
     return tf.Variable(tf.random_normal(shape, stddev=0.01))
 
-
+# Filter weight vectors: w, w2, w3, w4, w_0
 def model(X, w, w2, w3, w4, w_o, p_keep_conv, p_keep_hidden):
     l1a = tf.nn.relu(tf.nn.conv2d(X, w,                       # l1a shape=(?, 28, 28, 32)
                         strides=[1, 1, 1, 1], padding='SAME'))
@@ -37,8 +37,12 @@ def model(X, w, w2, w3, w4, w_o, p_keep_conv, p_keep_hidden):
     pyx = tf.matmul(l4, w_o)
     return pyx
 
+# Read data
 mnist = input_data.read_data_sets("MNIST_DATA/", one_hot=True)
 trX, trY, teX, teY = mnist.train.images, mnist.train.labels, mnist.test.images, mnist.test.labels
+
+# trx.reshape( n-inputs, image size, image size, depth )
+ # this variable is input in model()
 trX = trX.reshape(-1, 28, 28, 1)  # 28x28x1 input img
 teX = teX.reshape(-1, 28, 28, 1)  # 28x28x1 input img
 
