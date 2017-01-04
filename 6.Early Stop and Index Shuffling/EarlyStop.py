@@ -55,7 +55,7 @@ def MLP_iris():
         accuracy_list.append(validation_accuracy)
 
         if i >= 50:
-            if validation_accuracy - np.mean(accuracy_list[len(accuracy_list) / 2:]) <= 0.01:
+            if validation_accuracy - np.mean(accuracy_list[int(round(len(accuracy_list) / 2)):]) <= 0.01:
                 break
 
     sess.close()
