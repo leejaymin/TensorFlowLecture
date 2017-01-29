@@ -3,7 +3,7 @@ import tensorflow as tf
 import input_data
 
 
-def xavier_initializer(n_inputs, n_outputs, uniform = True):
+def xavier_init(n_inputs, n_outputs, uniform = True):
     if uniform:
         init_range = tf.sqrt(6.0/ (n_inputs + n_outputs))
         return tf.random_uniform_initializer(-init_range, init_range)
@@ -26,11 +26,11 @@ Y = tf.placeholder('float', [None, 10]) # 0-9 digits recognition = > 10 classes
 dropout_rate = tf.placeholder("float")
 
 # set model weights
-W1 = tf.get_variable("W1", shape=[784, 256], initializer=xavier_initializer(784, 256))
-W2 = tf.get_variable("W2", shape=[256, 256], initializer=xavier_initializer(256, 256))
-W3 = tf.get_variable("W3", shape=[256, 256], initializer=xavier_initializer(256, 256))
-W4 = tf.get_variable("W4", shape=[256, 256], initializer=xavier_initializer(256, 256))
-W5 = tf.get_variable("W5", shape=[256, 10], initializer=xavier_initializer(256, 10))
+W1 = tf.get_variable("W1", shape=[784, 256], initializer=xavier_init(784, 256))
+W2 = tf.get_variable("W2", shape=[256, 256], initializer=xavier_init(256, 256))
+W3 = tf.get_variable("W3", shape=[256, 256], initializer=xavier_init(256, 256))
+W4 = tf.get_variable("W4", shape=[256, 256], initializer=xavier_init(256, 256))
+W5 = tf.get_variable("W5", shape=[256, 10], initializer=xavier_init(256, 10))
 
 B1 = tf.Variable(tf.random_normal([256]))
 B2 = tf.Variable(tf.random_normal([256]))
