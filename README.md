@@ -13,12 +13,11 @@
 - Tensor Flow r0.12_RC01
 
 ## 목차 ##
-**Numpy, Scipy 코드**
+### Numpy, Scipy 코드 ###
 
 
-----
+### TensorFlow 코드 ###
 
-**TensorFlow 코드**
 1. [Basic Example](https://github.com/leejaymin/TensorFlowLecture/tree/master/0.Basic)
 1. [Linear Regression](https://github.com/leejaymin/TensorFlowLecture/tree/master/1.Linear%20Regression)
 1. [Logistic Classification](https://github.com/leejaymin/TensorFlowLecture/tree/master/2.Logistic%20Classification)
