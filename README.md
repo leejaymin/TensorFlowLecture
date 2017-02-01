@@ -13,12 +13,14 @@
 - Tensor Flow r0.12_RC01
 
 ## 목차 ##
+
 ### Numpy, Scipy 코드 ###
 
+0.1. [Fundamental_Neural_Network](https://github.com/leejaymin/TensorFlowLecture/tree/master/0.1.Fundamental_Neural_Network)
 
 ### TensorFlow 코드 ###
 
-1. [Basic Example](https://github.com/leejaymin/TensorFlowLecture/tree/master/0.Basic)
+0.2. [Basic Example](https://github.com/leejaymin/TensorFlowLecture/tree/master/0.2.Basic)
 1. [Linear Regression](https://github.com/leejaymin/TensorFlowLecture/tree/master/1.Linear%20Regression)
 1. [Logistic Classification](https://github.com/leejaymin/TensorFlowLecture/tree/master/2.Logistic%20Classification)
 1. [Multiple Perceptron for XOR Problem](https://github.com/leejaymin/TensorFlowLecture/tree/master/3.XOR)
