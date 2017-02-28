@@ -42,7 +42,7 @@ def MLP_iris():
     accuracy = tf.reduce_mean(tf.cast(correct_prediction, "float"))
 
     sess = tf.Session(config=tf.ConfigProto(gpu_options=tf.GPUOptions(allow_growth=True)))
-    sess.run(tf.initialize_all_variables())
+    sess.run(tf.global_variables_initializer())
 
     for i in range(500):
         sess.run(train_step, feed_dict={x: iris_data[0:100], y_target: iris_target_onehot[0:100]})

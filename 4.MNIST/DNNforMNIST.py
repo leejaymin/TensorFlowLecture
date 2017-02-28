@@ -41,11 +41,11 @@ L2 = tf.nn.relu(tf.add(tf.matmul(L1,W2),B2)) # Hidden layer with RELU activation
 hypothesis = tf.add(tf.matmul(L2, W3), B3) # No need to use softmax here
 
 # Define loss and optimizer
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(hypothesis, Y)) # Softmax loss
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=hypothesis, labels=Y)) # Softmax loss
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost) # Adam Optimizer
 
 # Initializing the variables
-init = tf.initialize_all_variables()
+init = tf.global_variables_initializer()
 
 # Launch the graph,
 with tf.Session() as sess:

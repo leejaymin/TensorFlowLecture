@@ -15,7 +15,7 @@ W = tf.Variable(tf.random_uniform([3,3],-1.0, 1.0))
 hypothesis = tf.nn.softmax(tf.matmul(X, W)) # softmax
 
 # Cost function: cross entropy
-cost = tf.reduce_mean(-tf.reduce_sum(Y*tf.log(hypothesis), reduction_indices=1))
+cost = tf.reduce_mean(-tf.reduce_sum(Y*tf.log(hypothesis), axis=1))
 
 # Minimize
 a = tf.Variable(0.2) # Learning rate, alpha
@@ -23,7 +23,7 @@ optimizer = tf.train.GradientDescentOptimizer(a)
 train = optimizer.minimize(cost)
 
 # Before starting, initialize the variables. We will `run` this first.
-init = tf.initialize_all_variables()
+init = tf.global_variables_initializer()
 
 # Launch the graph,
 with tf.Session() as sess:

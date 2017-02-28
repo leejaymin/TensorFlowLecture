@@ -21,11 +21,11 @@ b = tf.Variable(tf.zeros([10]))
 activation = tf.add(tf.matmul(X, W),b)  # Softmax
 
 # Cost function: cross entropy
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(activation, Y))
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=activation, labels=Y))
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost)  # Gradient Descen
 
 # Before starting, initialize the variables. We will `run` this first.
-init = tf.initialize_all_variables()
+init = tf.global_variables_initializer()
 
 # Launch the graph,
 with tf.Session() as sess:

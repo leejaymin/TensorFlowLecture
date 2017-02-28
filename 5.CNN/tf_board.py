@@ -69,7 +69,7 @@ p_keep_hidden = tf.placeholder("float")
 
 py_x = model(x_image, w, w2, w3, w4, w_o, p_keep_conv, p_keep_hidden)
 
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(py_x, Y),name="cross_entropy")
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=py_x, labels=Y),name="cross_entropy")
 train_op = tf.train.RMSPropOptimizer(0.001, 0.9).minimize(cost)
 predict_op = tf.argmax(py_x, 1)
 

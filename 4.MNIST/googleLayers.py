@@ -22,7 +22,7 @@ import tensorflow as tf
 def add_l2loss(books, params, l2loss, name='weight_decay'):
   if l2loss:
     books.add_loss(
-        tf.mul(tf.nn.l2_loss(params), l2loss, name=name),
+        tf.multiply(tf.nn.l2_loss(params), l2loss, name=name),
         regularization=True)
 
 

@@ -24,7 +24,7 @@ optimizer = tf.train.GradientDescentOptimizer(a)
 train = optimizer.minimize(cost)
 
 # Before starting, initialize the variables. We will `run` this first.
-init = tf.initialize_all_variables()
+init = tf.global_variables_initializer()
 
 # Launch the graph.
 with tf.Session() as sess:

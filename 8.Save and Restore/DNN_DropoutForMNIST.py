@@ -51,7 +51,7 @@ L4 = tf.nn.dropout(_L4, dropout_rate)
 hypothesis = tf.add(tf.matmul(L4, W5), B5) # No need to use softmax here
 
 # Define loss and optimizer
-cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(hypothesis, Y)) # Softmax loss
+cost = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=hypothesis, labels=Y)) # Softmax loss
 optimizer = tf.train.AdamOptimizer(learning_rate=learning_rate).minimize(cost) # Adam Optimizer
 
 # Initializing the variables

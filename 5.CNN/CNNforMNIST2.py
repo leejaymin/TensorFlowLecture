@@ -64,15 +64,15 @@ def CNN():
     # Create Session
     sess = tf.Session(config=tf.ConfigProto(
         gpu_options=tf.GPUOptions(allow_growth=True)))  # open a session which is a envrionment of computation graph.
-    sess.run(tf.initialize_all_variables())  # initialize the variables
+    sess.run(tf.global_variables_initializer())  # initialize the variables
 
     # create summary of parameters
-    tf.histogram_summary('weights_1', W_conv1)
-    tf.histogram_summary('weights_2', W_conv2)
-    tf.histogram_summary('y', y)
-    tf.scalar_summary('cross_entropy', cross_entropy)
-    merged = tf.merge_all_summaries()
-    summary_writer = tf.train.SummaryWriter("/tmp/cnn", sess.graph)
+    tf.summary.histogram('weights_1', W_conv1)
+    tf.summary.histogram('weights_2', W_conv2)
+    tf.summary.histogram('y', y)
+    tf.summary.scalar('cross_entropy', cross_entropy)
+    merged = tf.summary.merge_all()
+    summary_writer = tf.summary.FileWriter("/tmp/cnn", sess.graph)
 
     # training the MLP
     for i in range(5001):  # minibatch iteraction
