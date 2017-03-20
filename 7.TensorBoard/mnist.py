@@ -26,7 +26,6 @@ mnist = tf.contrib.learn.datasets.mnist.read_data_sets(train_dir=LOGDIR + 'data'
 urlretrieve(GIST_URL + 'labels_1024.tsv', LOGDIR + 'labels_1024.tsv')
 urlretrieve(GIST_URL + 'sprite_1024.png', LOGDIR + 'sprite_1024.png')
 
-
 def conv_layer(input, size_in, size_out, name="conv"):
   with tf.name_scope(name):
     w = tf.Variable(tf.truncated_normal([5, 5, size_in, size_out], stddev=0.1), name="W")
@@ -133,14 +132,15 @@ def main():
   # You can try adding some more learning rates
   for learning_rate in [1E-3, 1E-4, 1E-5]:
     # Include "False" as a value to try different model architectures
-    for use_two_fc in [True]:
-      for use_two_conv in [True]:
+    for use_two_fc in [True, False]:
+      for use_two_conv in [True, False]:
         # Construct a hyperparameter string for each one (example: "lr_1E-3,fc=2,conv=2)
         hparam = make_hparam_string(learning_rate, use_two_fc, use_two_conv)
         print('Starting run for %s' % hparam)
 
 	    # Actually run with the new settings
         mnist_model(learning_rate, use_two_fc, use_two_conv, hparam)
+
 
 if __name__ == '__main__':
   main()
