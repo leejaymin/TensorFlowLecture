@@ -13,7 +13,7 @@
 - Ubuntu 16.04
 - Pycharm pro and Jupyter Notebook
 - Python 2.7 and 3.5 (compatible code)
-- Tensor Flow r0.12.1 (updated on Jan. 22 2017)
+- Tensor Flow 1.0 
 
 ## 목차 ##
 
@@ -22,8 +22,7 @@
 0.1. [Fundamental_Neural_Network](https://github.com/leejaymin/TensorFlowLecture/tree/master/0.1.Fundamental_Neural_Network)
 
 ### TensorFlow 코드 ###
-
-1. [Basic Example](https://github.com/leejaymin/TensorFlowLecture/tree/master/0.2.Basic)
+0. [Basic Example](https://github.com/leejaymin/TensorFlowLecture/tree/master/0.2.Basic)
 1. [Linear Regression](https://github.com/leejaymin/TensorFlowLecture/tree/master/1.Linear%20Regression)
 1. [Logistic Classification](https://github.com/leejaymin/TensorFlowLecture/tree/master/2.Logistic%20Classification)
 1. [Multiple Perceptron for XOR Problem](https://github.com/leejaymin/TensorFlowLecture/tree/master/3.XOR)
@@ -35,6 +34,7 @@
 1. [Early Stop and Index Shuffling](https://github.com/leejaymin/TensorFlowLecture/tree/master/6.Early%20Stop%20and%20Index%20Shuffling)
 1. [TensorBoard](https://github.com/leejaymin/TensorFlowLecture/tree/master/7.TensorBoard)
 1. [Save and Restore](https://github.com/leejaymin/TensorFlowLecture/tree/master/8.Save%20and%20Restore)
+1. [RNN](https://github.com/leejaymin/TensorFlowLecture/tree/master/9.RNN)
 
 
 ## 참고자료 ##
@@ -45,6 +45,7 @@
 - Bay Area DL School Live Stream, Sherry Moore, tf-tutorial: [URL](https://github.com/sherrym/tf-tutorial)  
 - 텐서플로 코리아: [URL](https://tensorflowkorea.wordpress.com/)  
 - 한국인지과학협회 딥러닝 튜토리얼: [URL](https://github.com/leejaymin/deeplearning_tutorial) 
+- tgjeon, TensorFlow-Tutorials-for-Time-Series: [URL](https://github.com/tgjeon/TensorFlow-Tutorials-for-Time-Series)
 
 
 
