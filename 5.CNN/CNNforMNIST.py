@@ -1,7 +1,7 @@
 
 import tensorflow as tf
 import numpy as np
-import input_data
+from tensorflow.examples.tutorials.mnist import input_data
 import time
 
 batch_size = 128
