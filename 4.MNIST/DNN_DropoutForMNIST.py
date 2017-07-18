@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-import input_data
+from tensorflow.examples.tutorials.mnist import input_data
 
 
 def xavier_init(n_inputs, n_outputs, uniform = True):
