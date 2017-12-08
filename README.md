@@ -1,19 +1,14 @@
 # TensorFlowLecture
 
-본 코드는 `Fundamental_NN`의 경우 Coursera, Andrew Ng 교수님 강의를 보고 해당 과제에 대한 부분을 `Python`으로 작성한 것입니다.  
-`TensorFlow`에 관한 부분은 김성훈 교수님의 강의와 `TensorFlow-Korea` 그리고 `Google TensorFlow Example`을 보면서 작성 했습니다.
-추가로 `CNN`과 관련해서는 한국인지과학협회에서 주최한 `TensorFlow Tutorial`에서 곽동현님의 코드도 참조 하였습니다.
-
+여러 강의와 교재를 보고 작성한 예제 코드들 입니다.
 이론적인 정리 내용은 저의 개인 [블로그](http://goodtogreate.tistory.com/category/Data%20Science/TensorFlow%20%28python%29)에 있습니다.  
-
-
 
 ## 개발환경 ##
 
 - Ubuntu 16.04
-- Pycharm pro and Jupyter Notebook
-- Python 2.7 and 3.5 (compatible code)
-- Tensor Flow 1.0 
+- Pycharm Pro and Jupyter Notebook
+- Python 3.5
+- Tensor Flow 1.4
 
 ## 목차 ##
 
@@ -35,7 +30,7 @@
 1. [TensorBoard](https://github.com/leejaymin/TensorFlowLecture/tree/master/7.TensorBoard)
 1. [Save and Restore](https://github.com/leejaymin/TensorFlowLecture/tree/master/8.Save%20and%20Restore)
 1. [RNN](https://github.com/leejaymin/TensorFlowLecture/tree/master/9.RNN)
-
+1. [Transfer Learning]()
 
 ## 참고자료 ##
 - Coursera, Machine Learning (Andrew ng): [URL](https://www.coursera.org/learn/machine-learning/home/welcome) 
