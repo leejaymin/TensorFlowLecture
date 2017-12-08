@@ -30,7 +30,7 @@
 1. [TensorBoard](https://github.com/leejaymin/TensorFlowLecture/tree/master/7.TensorBoard)
 1. [Save and Restore](https://github.com/leejaymin/TensorFlowLecture/tree/master/8.Save%20and%20Restore)
 1. [RNN](https://github.com/leejaymin/TensorFlowLecture/tree/master/9.RNN)
-1. [Transfer Learning]()
+1. [Transfer Learning](https://github.com/leejaymin/TensorFlowLecture/tree/master/10.Transfer%20Learning)
 
 ## 참고자료 ##
 - Coursera, Machine Learning (Andrew ng): [URL](https://www.coursera.org/learn/machine-learning/home/welcome) 
